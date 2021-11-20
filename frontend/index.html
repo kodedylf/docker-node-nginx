@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Docker Nginx</title>
+</head>
+<body>
+  <div id="app" />
+</body>
+<script>
+  fetch('/api/')
+ .then(response => response.json())
+ .then(data => {
+    document.getElementById("app").innerHTML = data.text;
+ });
+</script>
+</html>
